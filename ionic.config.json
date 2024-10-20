@@ -1,0 +1,7 @@
+{
+  "name": "lib-tinybaby-angular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
