@@ -14,7 +14,7 @@ import { HtmlModule } from '../../../modules/html/html.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    HtmlModule,    HomePageRoutingModule,
     HtmlModule,
   ],
   declarations: [HomePage,]

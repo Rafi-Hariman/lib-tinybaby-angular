@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { BabyTargetPageRoutingModule } from './baby-target-routing.module';
 
 import { BabyTargetPage } from './baby-target.page';
+import { HtmlModule } from '../../../modules/html/html.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    HtmlModule,    
     BabyTargetPageRoutingModule
   ],
   declarations: [BabyTargetPage]

@@ -13,6 +13,13 @@ import { SvchomeComponent } from './../../html-service/page-service/svchome/svch
 
 import { ModalbottomsheetComponent } from '../../html-service/modal/modal-template/modalbottomsheet/modalbottomsheet.component';
 import { ModalfullsheetComponent } from '../../html-service/modal/modal-template/modalfullsheet/modalfullsheet.component';
+import { SvcloginComponent } from 'src/app/html-service/page-service/svclogin/svclogin.component';
+import { SvcregisterComponent } from 'src/app/html-service/page-service/svcregister/svcregister.component';
+import { SvcbabytargetComponent } from 'src/app/html-service/page-service/svcbabytarget/svcbabytarget.component';
+import { SvcbabyinformationComponent } from 'src/app/html-service/page-service/svcbabyinformation/svcbabyinformation.component';
+import { SvcsettingsComponent } from 'src/app/html-service/page-service/svcsettings/svcsettings.component';
+import { SvcchartbabyComponent } from 'src/app/html-service/page-service/svcchartbaby/svcchartbaby.component';
+import { SvcbabyformComponent } from 'src/app/html-service/page-service/svcbabyform/svcbabyform.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +30,13 @@ import { ModalfullsheetComponent } from '../../html-service/modal/modal-template
     NotifComponent,
 
     SvchomeComponent,
+    SvcloginComponent,
+    SvcregisterComponent,
+    SvcbabytargetComponent,
+    SvcbabyinformationComponent,
+    SvcsettingsComponent,
+    SvcchartbabyComponent,
+    SvcbabyformComponent,
 
     ModalbottomsheetComponent,
     ModalfullsheetComponent,
@@ -41,6 +55,13 @@ import { ModalfullsheetComponent } from '../../html-service/modal/modal-template
     NotifComponent,
 
     SvchomeComponent,
+    SvcloginComponent,
+    SvcregisterComponent,
+    SvcbabytargetComponent,
+    SvcbabyinformationComponent,
+    SvcsettingsComponent,
+    SvcchartbabyComponent,
+    SvcbabyformComponent,
 
     ModalbottomsheetComponent,
     ModalfullsheetComponent,
