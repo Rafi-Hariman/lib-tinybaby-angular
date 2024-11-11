@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-svclogin',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SvcloginComponent  implements OnInit {
 
-  constructor() { }
+  constructor(
+    private routerSvc : Router
+  ) { }
 
   ngOnInit() {}
+
+
+  onNavigateRegister(): void {
+    this.routerSvc.navigate(['/register']);
+  }
+
+  onNavigateHome(): void {
+    this.routerSvc.navigate(['/page/home']);
+  }
 
 }

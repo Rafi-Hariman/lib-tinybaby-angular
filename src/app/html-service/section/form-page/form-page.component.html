@@ -1,0 +1,115 @@
+<div style="padding: 20px 0px 20px 0px;">
+  <div class="contain" style="padding: 20px; text-align: start;">
+    <h1 class="title" style="--duration: 0.8s">
+      <span style="--delay: 0.1s; font-family: 'Nunito'; font-weight: 700; font-size: 22px;">Dalam menu ini</span>
+      <span style="--delay: 0.3s; font-family: 'Nunito'; font-weight: 700; font-size: 22px;">
+        Kami akan membantu untuk mengetahui <strong style="color: blue;"> perkembangan bayi anda
+        </strong>
+      </span>
+    </h1>
+  </div>
+  <mat-stepper orientation="horizontal">
+    <mat-step>
+      <ng-template matStepLabel>Step 1</ng-template>
+      <!-- <ng-template matStepContent> -->
+      <h4>mat-select</h4>
+      <form>
+        <mat-form-field>
+          <mat-label>Pilih umur bayi</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="age">
+            @for (age of age; track age) {
+            <mat-option [value]="age.value">{{age.viewValue}}</mat-option>
+            }
+          </mat-select>
+          <mat-hint>Bulan</mat-hint>
+        </mat-form-field>
+        <div style="margin-top: 1rem;">
+          <mat-form-field class="example-user-input">
+            <mat-label>Masukan berat badan bayi</mat-label>
+            <input matInput type="number" aria-label="Adds a delay between hovering over the button and displaying the tooltip">
+            <mat-hint>Ons</mat-hint>
+          </mat-form-field>
+        </div>
+        <div style="margin-top: 1rem;">
+          <mat-form-field class="example-user-input">
+            <mat-label>Masukan tinggi badan bayi</mat-label>
+            <input matInput type="number" aria-label="Adds a delay between hovering over the button and displaying the tooltip">
+            <mat-hint>Cm</mat-hint>
+          </mat-form-field>
+        </div>
+
+      </form>
+      <div class="wb">
+        <button matStepperNext id="bt"
+          class="bg-blue-700 hover:bg-blue-500 text-white font-normal py-2 px-4 rounded-full">
+          Next
+        </button>
+      </div>
+      <!-- </ng-template> -->
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Step 2</ng-template>
+      <form>
+        <fieldset>
+          <legend>Analisa bayi umur 3 bulan</legend>
+          <div style="overflow-y: scroll; height: 300px">
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi dapat mengangkat kepalanya saat tengkurap?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi dapat menahan kepala tetap tegak dan stabil saat ditopang duduk?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi mulai meraih dan memegang mainan atau benda di dekatnya?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi sering menggenggam tangan Anda atau benda lainnya dengan kuat?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi melakukan gerakan menendang-nendang dengan kaki saat berbaring?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi dapat mengikuti gerakan benda atau orang dengan matanya?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-checkbox color="tertiary" id="terms">
+                <div class="ion-text-wrap">
+                  Apakah bayi merespon suara dengan menggerakkan kepala atau mata ke arah suara?
+                </div>
+              </ion-checkbox>
+            </ion-item>
+          </div>
+        </fieldset>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Step 3</ng-template>
+      <p>This content was rendered eagerly</p>
+      <button mat-button matStepperPrevious>Back</button>
+    </mat-step>
+  </mat-stepper>
+</div>
